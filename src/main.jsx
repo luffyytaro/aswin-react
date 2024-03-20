@@ -1,9 +1,12 @@
 import  ReactDOM  from "react-dom/client";;
 import "./style.css";
-import App from "./App";
+// import App from "./App";
+import New from "./New";
 
 
 const root = document.getElementById("root");
+ReactDOM.createRoot(root).render(<New/>);
+
 // ReactDOM.createRoot(root).render(<App/>);
 // ReactDOM.createRoot(root).render(
 //     <main className="container">
