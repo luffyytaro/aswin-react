@@ -1,8 +1,31 @@
-/* h1{
+  h1{
     background-color: aquamarine;
     color: brown;
+} 
+
+/* .container{
+    margin: 2rem;
+} */ 
+
+/* main{
+    width: 100%;
+    display: block;
+    justify-content: space-evenly;
+    margin: 8px 0 20px;
+    width: 970;
+    height: 100;
 }
 
-.container{
-    margin: 2rem;
-} */
+
+image{
+    height: 50px;
+    width: 50px;
+}  */
+
+
+section{
+    background-color: rgb(139, 241, 183);
+    color: rgb(0, 0, 0);
+ display: grid;
+ justify-content: space-around;
+}

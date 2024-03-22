@@ -35,7 +35,8 @@ class Mount extends Component{
                 <h1 id="abc">{this.state.count}</h1>
                 {this.state.data.products?.map((item,index) =>(
                     <div key={index}>{item.title}
-                    <img src={item.thumbnail} alt="" /></div>
+                    <img src={item.thumbnail
+                    } alt="" /></div>
                 ))}
                 <button onClick={() => this.setState({count: this.state.count+1})}>click</button>
             </main>
