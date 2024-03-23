@@ -3,12 +3,14 @@ import "./style.css";
 // import App from "./App";
 // import New from "./New";
 // import Mount from "./Mount";
-import App from "./app2";
+// import App from "./app2";
+import Memo from "./memo";
 
 
 const root = document.getElementById("root");
-ReactDOM.createRoot(root).render(<App/>);
+ReactDOM.createRoot(root).render(<Memo/>);
 
+// ReactDOM.createRoot(root).render(<App/>);
 // ReactDOM.createRoot(root).render(<Mount/>);
 // ReactDOM.createRoot(root).render(<New/>);
 // ReactDOM.createRoot(root).render(<App/>);
