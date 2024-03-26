@@ -1,31 +1,51 @@
-  h1{
-    background-color: aquamarine;
-    color: brown;
-} 
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
 
-/* .container{
-    margin: 2rem;
-} */ 
-
-/* main{
-    width: 100%;
-    display: block;
-    justify-content: space-evenly;
-    margin: 8px 0 20px;
-    width: 970;
-    height: 100;
+div{ 
+    
+    justify-content: space-evenly;   
+    background-color: rgb(212, 71, 71);
+    display: inline-flex; 
+    
+}
+section {
+    border: 0.5px solid white;
 }
 
 
-image{
-    height: 50px;
-    width: 50px;
-}  */
-
-
-section{
-    background-color: rgb(139, 241, 183);
-    color: rgb(0, 0, 0);
- display: grid;
- justify-content: space-around;
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    color: black
 }
+
+h2{
+    color: white;
+}
+
+
+h3{
+    color: rgb(208, 252, 121);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
