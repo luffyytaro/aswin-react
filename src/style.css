@@ -1,18 +1,35 @@
 *{
     margin: 0;
-    padding: 5px;
+    padding: 0;
     box-sizing: border-box;
 }
 
-div{ 
+header{
+    background-color: rgb(189, 248, 130);
+}
+
+.left-section{
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.right-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.content{ 
     
     justify-content: space-evenly;   
-    background-color: rgb(212, 71, 71);
+    background-color: rgb(207, 61, 61);
     display: inline-flex; 
     
 }
 section {
-    border: 0.5px solid white;
+    border: 1px solid white;
 }
 
 
