@@ -7,12 +7,13 @@ import "./style.css";
 // import App from "./app2";
 // import Memo from "./memo";
 // import Work from "./work";
-import Dummy from "./new-work";
-
+// import Dummy from "./new-work";
+import Condition from "./condition";
 
 const root = document.getElementById("root");
-ReactDOM.createRoot(root).render(<Dummy/>);
+ReactDOM.createRoot(root).render(<Condition/>)
 
+// ReactDOM.createRoot(root).render(<Dummy/>);
 // ReactDOM.createRoot(root).render(<Work/>);
 // ReactDOM.createRoot(root).render(<Memo/>);
 // ReactDOM.createRoot(root).render(<App/>);
