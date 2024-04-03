@@ -1,5 +1,6 @@
 import  ReactDOM  from "react-dom/client";;
 import "./style.css";
+import Register from "./login-UI/registration";
 
 // import App from "./App";
 // import New from "./New";
@@ -8,11 +9,13 @@ import "./style.css";
 // import Memo from "./memo";
 // import Work from "./work";
 // import Dummy from "./new-work";
-import Condition from "./condition";
+// import Condition from "./condition";
+
 
 const root = document.getElementById("root");
-ReactDOM.createRoot(root).render(<Condition/>)
+ReactDOM.createRoot(root).render(<Register/>)
 
+// ReactDOM.createRoot(root).render(<Condition/>)
 // ReactDOM.createRoot(root).render(<Dummy/>);
 // ReactDOM.createRoot(root).render(<Work/>);
 // ReactDOM.createRoot(root).render(<Memo/>);

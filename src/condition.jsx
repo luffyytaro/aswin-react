@@ -4,6 +4,7 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import PageNotFound from "./pages/pageNotFound";
 import NavBar from "./pages/navbar";
+import Register from "./login-UI/registration";
 
 
 function Condition() {
