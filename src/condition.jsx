@@ -12,11 +12,13 @@ function Condition() {
     return (
         <main>
             <BrowserRouter>
+            
                 <NavBar/>
                     <Routes>
                         <Route path="/" Component={Home} />
                         <Route path="/contact" Component={Contact} />
                         <Route path="/about" Component={About} />
+                        <Route path="/register" Component={Register}/>
                         <Route path="/*" Component={PageNotFound} />
                     </Routes>
                 
