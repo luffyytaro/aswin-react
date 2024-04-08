@@ -19,13 +19,20 @@
 }
 
 .section1{
-    padding-left: 20px;
+    padding-left: 17rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.sec2{
+    display: flex;
 }
 .box{
     /* width: 12vw; */
     /* height: 20vh; */
+    transform: translateY(-20px);
     display: flex;
-    background-color: rgba(66, 64, 64, 0.627);
+    background-color: rgb(66, 64, 64);
 }
 .acc1{
     padding: 2rem;
@@ -34,24 +41,33 @@
     padding: 2rem;
 }
 
+.button{
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    height: 7vh;
+   
+}
 .one{
     background-color: bisque;
+   
 }
 .two{
     background-color: orange;
+   
 }
 
-.container img{
-  width: 100%;
+/* .container img{
+  width: 100px;
   height: 100%;
-}
+} */
 
-img ::after{
+.container {
     background: url('./banner.jpg');
     content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 99vw;
+    height: 100vh;
     top: 0px;
     left: 0px;
     z-index: -1;
