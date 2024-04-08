@@ -19,7 +19,7 @@
 }
 
 .section1{
-    padding-left: 17rem;
+    padding-left: 15rem;
     display: flex;
     justify-content: space-between
 }
@@ -64,11 +64,63 @@
 } */
 
 .container {
-    background: url('./banner.jpg');
+    background: url('./banner1.jpg');
     content: "";
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     top: 0px;
     left: 0px;
     z-index: -1;
+}
+
+.skills{
+    background-color: rgb(46, 44, 44);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.micro{
+    display: flex;
+    align-items: center;
+}
+
+.heart{
+    display: flex;
+    align-items: center;
+}
+
+.help{
+    display: flex;
+    align-items: center;
+}
+
+.mri{
+    display: flex;
+    align-items: center;
+}
+
+.checklist{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+}
+
+.lab{
+    max-width: 1vw;
+    max-height:  5vh;
+}
+
+.lab img{
+    width: 100vw;
+    height: 110vh;
+    
+}
+
+.text{
+    font-size: large;
 }
