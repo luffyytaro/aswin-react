@@ -5,6 +5,7 @@ import About from "./pages/about";
 import PageNotFound from "./pages/pageNotFound";
 import NavBar from "./pages/navbar";
 import Register from "./login-UI/registration";
+import Formik from "./login-UI/formik";
 
 
 function Condition() {
@@ -18,7 +19,7 @@ function Condition() {
                         <Route path="/" Component={Home} />
                         <Route path="/contact" Component={Contact} />
                         <Route path="/about" Component={About} />
-                        <Route path="/register" Component={Register}/>
+                        <Route path="/register" Component={Formik}/>
                         <Route path="/*" Component={PageNotFound} />
                     </Routes>
                 
