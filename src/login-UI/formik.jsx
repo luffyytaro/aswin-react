@@ -1,8 +1,10 @@
 import {useFormik} from "formik";
 import toast,{Toaster} from "react-hot-toast";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 export default function Formik() {
+   const navigate = useNavigate();
     const formik = useFormik({
         initialValues: {
             username: "",
@@ -13,7 +15,10 @@ export default function Formik() {
         validateOnBlur: false,
         validateOnChange: false,
         onSubmit: (value) =>{
-            let res = axios.post("http://localhost:5000/register",value);
+            let res = axios.post("http://localhost:5000/api/register",value);
+           res.then(()=> {
+            navigate("/login",{replace:true});
+           });
             toast.promise(res,{
                 success: "Registration success",
                 error: "Registration failed",
@@ -51,7 +56,7 @@ function validate(value) {
         errors.username = "invalid username";
     }else if (!/^[a-zA-Z0-9\-\._]+@[a-zA-Z0-9]+\.[a-z]{2,6}$/.test(value.email)){
         errors.username = "invalid username";
-    }else if (!/^[w\W]{4,15}$/.test(value.password)){
+    }else if (!/^[\w\W]{4,15}$/.test(value.password)){
         errors.password = "invalid password";
     }
     return errors;
