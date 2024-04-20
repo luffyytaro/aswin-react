@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Profile(){
-    const [data, setData] = useState({});
     const navigate = useNavigate();
+    const [data, setData] = useState({});
     let token = localStorage.getItem("token");
     useEffect(() => {
         axios.get("http://localhost:5000/api/profile",{
@@ -12,9 +12,21 @@ export default function Profile(){
                 Authorization: `Bearer ${token}`
             }
         }).then(res =>{
-            setData(res.data.userData);
+            setData(res.data.result);
         })
     },[]);
+
+    const newButton = () =>{
+    let value = document.getElementById("note").value;
+    axios.post("http://localhost:5000/api/textbox",{text: value} ,{
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`
+        }
+    })
+    .then(res => {
+        alert(res.data.msg)
+    })
+    }
 
     const logoutHandler = () =>{
         localStorage.removeItem("token");
@@ -23,9 +35,15 @@ export default function Profile(){
     return(
         <main>
             PROFILE 
-            <h2>Username: {data.username}</h2>
-            <h3>E-mail: {data.email}</h3>
+            <h4>Username: {data.username}</h4>
+            <h5>E-mail: {data.email}</h5>
             <button onClick={logoutHandler}>Logout</button>
+
+            <div className="textbox">
+                <textarea name="" id="note" cols="50" rows="30">
+                </textarea>
+                <button onClick={newButton}>ADD</button>
+            </div>
         </main>
     );
 };
